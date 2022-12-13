@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="BP Tracker"
+        android:textAlignment="center"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/label_systolic"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="25sp"
+        android:text="Systolic"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/inp_systolic"
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        android:layout_below="@id/banner"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/label_systolic"
+        android:layout_marginLeft="25sp"
+        android:hint="Enter Systolic"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/label_diastolic"
+        android:layout_width="110sp"
+        android:layout_height="35sp"
+        android:layout_below="@+id/label_systolic"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="24dp"
+        android:text="Diastolic"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/inp_diastolic"
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        android:layout_below="@id/label_systolic"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/label_diastolic"
+        android:layout_marginLeft="25sp"
+        android:hint="Enter Diastolic"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/label_pulse"
+        android:layout_width="110sp"
+        android:layout_height="35sp"
+        android:text="Pulse"
+        android:textSize="25sp"
+
+        android:layout_below="@+id/label_diastolic"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="25sp"
+        />
+    <EditText
+        android:id="@+id/inp_pulse"
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        android:layout_below="@id/label_diastolic"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/label_pulse"
+        android:layout_marginLeft="25sp"
+        android:hint="Enter Pulse"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/label_weight"
+        android:layout_width="110sp"
+        android:layout_height="35sp"
+        android:text="Weight"
+        android:textSize="25sp"
+        android:layout_below="@+id/label_pulse"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="25sp"
+        />
+    <EditText
+        android:id="@+id/inp_weight"
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        android:layout_below="@id/label_pulse"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/label_weight"
+        android:layout_marginLeft="25sp"
+        android:hint="Enter Weight"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/inp_submit"
+        android:layout_width="380dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/inp_weight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00bee0"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

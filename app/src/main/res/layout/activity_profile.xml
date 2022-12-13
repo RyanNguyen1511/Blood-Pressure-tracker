@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+     android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50sp"
+        android:fontFamily="sans-serif-black"
+        android:text="BP Tracker"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/pro_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_marginBottom="25sp"
+        android:text="Hello ! How are you today ?"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/btn_input"
+        android:layout_width="380dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/pro_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00bee0"
+        android:text="input"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:onClick="openInput"/>
+    <Button
+        android:id="@+id/btn_preview"
+        android:layout_width="380dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/btn_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00bee0"
+        android:text="Preview"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btn_graph"
+        android:layout_width="380dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/btn_preview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00bee0"
+        android:text="Graph"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btn_overview"
+        android:layout_width="380dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/btn_graph"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00bee0"
+        android:text="Overview"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

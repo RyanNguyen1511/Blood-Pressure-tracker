@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BP Tracker"
+        android:textSize="60sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/banner" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textSize="24sp"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_email" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="380dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00bee0"
+        android:text="login"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp" />
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="85dp"
+        android:layout_toRightOf="@id/forgotpassword"/>
+
+    <ProgressBar
+        android:id="@+id/login_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+</RelativeLayout>
